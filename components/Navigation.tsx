@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Navigation() {
   const pathname = usePathname();
 
-  const { t } = useTranslation("navigation");
+  const { t } = useTranslation("common");
 
   return (
     <nav className="navbar navbar-expand-lg bg-light">
@@ -22,7 +22,7 @@ export default function Navigation() {
                 href="/"
                 className={`nav-link ${pathname === "/" ? "active" : ""}`}
               >
-                {t("Home")}
+                {t("navigation.Home")}
               </Link>
             </li>
             <li className="nav-item">
@@ -30,7 +30,7 @@ export default function Navigation() {
                 href="/about"
                 className={`nav-link ${pathname === "/about" ? "active" : ""}`}
               >
-                {t("About")}
+                {t("navigation.About")}
               </Link>
             </li>
           </ul>

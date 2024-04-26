@@ -1,0 +1,14 @@
+{
+  "navigation": {
+    "Home": "مسكن",
+    "About": "حول"
+  },
+  "home": {
+    "Home title": "عنوان المنزل",
+    "Home description": "وصف المنزل"
+  },
+  "about": {
+    "About title": "حول العنوان",
+    "About description": "حول الوصف"
+  }
+}

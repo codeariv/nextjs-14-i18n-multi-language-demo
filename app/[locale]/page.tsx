@@ -1,11 +1,11 @@
 import TranslationsProvider from "@/components/TranslationsProvider";
 import Navigation from "@/components/Navigation";
-import initialTranslations from "../i18n";
+import initializeTranslations from "../i18n";
 
-const i18nNamespaces = ["home"];
+const i18nNamespaces = ["common"];
 
 async function Home({ params: { locale } }: { params: { locale: string } }) {
-  const { t, resources } = await initialTranslations(locale, i18nNamespaces);
+  const { t, resources } = await initializeTranslations(locale, i18nNamespaces);
 
   return (
     <TranslationsProvider
@@ -16,8 +16,8 @@ async function Home({ params: { locale } }: { params: { locale: string } }) {
       <Navigation />
       <div className="container">
         <div className="mt-5">
-          <h1>{t("Home title")}</h1>
-          <p>{t("Home description")}</p>
+          <h1>{t("home.Home title")}</h1>
+          <p>{t("home.Home description")}</p>
         </div>
       </div>
     </TranslationsProvider>
